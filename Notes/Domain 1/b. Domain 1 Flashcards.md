@@ -1,0 +1,214 @@
+- Ethics
+	- 4 Cannons of the ISC2 Code of ethics
+		- Protect society, the greater good, and infrastructure
+		- Act honorably, honestly, justly, and legally
+		- provide diligent and competent services to principals
+		- advance and protect the professions
+- Legal
+	- Computer Fraud and Abuse Act
+		- First US cybercrime law
+	- Federal Information Security Management Act
+		- Scoped to federal government
+	- Copyright and Digital Millennium Copyright Act
+		- Scoped to artists
+	- Licensing > Contractual
+		- legal contract
+	- Licensing > Shrink Wrap
+		- Presented in the packaging of software
+	- Licensing > Click Through
+		- Digital agreement for end-users
+- Risk Management
+	- Asset: 
+		- anything used in a business process or task
+	- Threat: 
+		- Any potential occurrence that may cause and undesirable or unwanted outcome for a specific asset
+	- Threat Agent: 
+		- People, program, hardware, or system that intentionally exploit vulnerabilities
+	- Threat Vector: 
+		- path or means by which an attack or threat agent can gain access to a target
+	- Vulnerability: 
+		- weakness in an asset or the abscense/weakness of a safeguard/countermeasures
+	- Risk: 
+		- possibility or likelihood that a threat will exploit a vulnerability to cause harm to an asset
+	- Safeguards: 
+		- safeguard, security control, protection mechanism, or countermeasure is anything that removes or reduces a vulnerability or protects against threats
+	- NIST 800-37 Process
+		- People Can See I Am Always Monitoring
+		- Prepare to execute
+		- Categorize Information Systems
+		- Select security controls
+		- Implement security controls
+		- Assess the security controls
+		- Authorize the system
+		- Monitor security Controls
+	- Residual Risk (definition)
+		- Risk that remains even with safeguards -> Accept rather than mitigate
+	- Inherent Risk
+		- Risk that exists in the absence of controls
+	- Total Risk
+		- Risk present if no safeguards were implemented across the whole organization
+	- Risk Calculation
+		- Risk = Threat * Vulnerability
+	- Exposure Factor
+		- percentage of loss if a specific asset were violated by a realized risk
+	- Single Loss Expectancy (definition)
+		- % cost associate with a single realized risk against a specific asset
+	- Single Loss Expectancy (calculation)
+		- Asset Value * Exposure Factor
+	- Annualized Rate of Occurrence
+		- Frequency with a specific threat or risk will occur in a single year
+	- Annualized Loss Expectancy (definition)
+		- yearly cost of all instances of a specific realized threat against a specific asset
+	- Annualized Loss Expectancy (calculation)
+		- ALE = Single Loss Expectancy * Annualized Rate of Occurrence
+	- Value of Safeguard
+		- Value of Safeguard = ALE before Safeguard - ALE after Safeguard - Annual Cost of Safeguard
+	- Controls Gap (Definition)
+		- Amount of risk reduced by implementing safeguard
+	- Residual Risk (Definition)
+		- Residual Risk = Total Risk - Controls Gap
+	- Qualitative Analysis
+		- Subjective scoring system to rank threats and countermeasures relative to the system or environment
+	- Delphi Technique
+		- Qualitative risk analysis that uses anonymous feedback
+	- Quantitative Analysis Process
+		- Inventory assets and assign values -> (AV)
+		- Identify Threats for each asset -> (EF) (SLE)
+		- Perform threat analysis -> (ARO)
+		- Estimate annualized lose expectancy -> (ALE)
+		- Research counter measures for each threat -> (ARO) (ALE)
+		- Perform cost/benefit analysis of countermeasures
+	- Loss Potential
+		- What would be lost if the threat agent was successful
+	- Delayed Loss
+		- Loss that could occur over time
+- Security Controls
+	- Safeguards
+		- a control, technology, policy, or action that is proactively implemented to protect an asset and reduce the likelihood of a threat exploiting a vulnerability.
+	- Countermeasures
+		- Any action, technology, or control that responds to a threat or incident to mitigate or reduce its impact 
+	- Category of Controls
+		- Technical - Hardware and software
+		- Administrative - policies and procedures
+		- Physical - physically touch
+	- Types of Controls
+		- Deterrent - discourage violation
+		- Preventative - stop activity from occurring
+		- Detective - discover after the fact
+		- Compensating - support other controls
+		- Corrective - modify the environment back to a steady state
+		- Recovery - advanced corrective action
+		- Directive - direct/control actions to force compliance
+- Security Policy Development
+	- Policy
+		- Overview of the organization's security needs
+		- Outlines the objectives, vision, and goals
+		- Assign responsibility, define roles, define audit requirements
+	- Standard
+		- Requirements for a specific asset of the IT environment
+		- Provides a course of action
+	- Baseline
+		- minimum level of security required for a system
+		- establishes a secure state of operations
+	- Guideline
+		- Flexible guide on how standards and baselines can be met
+		- Outlines methodologies
+		- Not requirements
+	- Procedure
+		- detailed, step-by-step how-to
+		- exact actions required to meet a control
+- Supply Chain Risk
+	- Silicon Root of Trust (RoT)
+		- tamper-resistant component within a computer's hardware that provides a secure starting point for establishing trust and security in a system
+		- Ensures integrity, authenticity, and confidentiality in the boot process and software
+	- Physically Unclonable Functions (PUFs)
+		- unique, unpredictable digital identifier based on the inherent physical properties of the component
+		- Provides hardware-based security feature by creating a unique fingerprint for electronic devices or integrated circuits
+		- used for device authentication
+	- Software Bill of Materials (SBOM)
+		- Inventory of the software components and dependencies
+- Threat Modeling
+	- Approaches to threat modeling
+		- Asset Focus - uses asset valuation results to identify threats to valuable assets
+		- Attack Focus - Identify attackers and threats based on attackers' goals
+		- Software Focus - Threats against software developed by the organization
+	- STRIDE
+		- Spoofing: falsified identity
+		- Tampering: unauthorized changes of data
+		- Repudiation: Deny having performed action
+		- Information Disclosure
+		- Denial of Service: prevent authorized access
+		- Elevation of Privilege
+	- PASTA
+		- Focuses on developing countermeasures based on asset value
+		- 1. Definition of the Objective
+		- 2. Definition of the Technical Scope
+		- 3. Application Decomposition and Analysis
+		- 4. Threat Analysis
+		- 5. Weakness and Vulnerability Analysis
+		- 6. Attack Modeling and Simulation
+		- 7. Risk Analysis and Management
+	- VAST
+		- Threat modeling as part of the Agile programming methodology
+		- Visual
+		- Agile
+		- Simple
+		- Threat
+- 5 pillars of Information Security
+	- Confidentiality
+		- information is only accessible to those authorized to access it
+	- Integrity
+		- data is accurate, complete, and has not been tampered with without authorization
+	- Availability
+		- Authorized users have timely and reliable access to information and resources when needed
+	- Authenticity
+		- The origin of information can be verified
+	- Non-repudiation
+		- A party cannot deny the authenticity of their actions or communications
+- Security Control Frameworks
+	- International Organization for Standardization (ISO) 27001
+		- Establish, implement, maintain, and continually improve an Information Security Management System (ISMS)
+	- National Institute of Standards and Technology (NIST) Cybersecurity Framework
+		- 5 core functions: Identify, Protect, Detect, Respond, Recover
+	- Control Objectives for Information and Related Technologies (COBIT)
+		- Manage and control IT processes to align with business goals
+		- Provide Stakeholder value
+		- Holistic Approach
+		- Dynamic Governance System
+		- Governance Distinct from Management
+		- Tailored to Enterprise Needs
+		- End-to-End Governance System
+	- Sherwood Applied Business Security Architecture (SABSA)
+		- Used by large organizations to establish a risk-driven enterprise security architecture framework
+	- Payment Card Industry Data Security Standard (PCI DSS)
+		- Focuses on protecting cardholder data and securing payment systems
+	- Federal Risk and Authorization Management Program (FedRAMP)
+		- US government framework for cloud service provider security
+- Import/Export Controls
+	- Computer export controls
+		- No export to Cuba, Iran, North Korea, Sudan, and Syria
+- Privacy Legislature
+	- US Privacy
+		- based on the Fourth Amendment - unreasonable searches and seizures
+	- EU Privacy
+		- 72 hour data breach notification
+	- Health Insurance Portability and Accountability Act (HIPAA)
+		- defines the rights of individuals who are the subject of medical records
+		- governs organizations that are responsible for health information about individuals
+	- Health Information Technology for Economic and Clinical Health Act (HITECH)
+		- extends HIPAA to organizations that handle PHI on behalf of HIPAA-covered entities
+	- Gramm-Leach-Bliley Act (GLBA)
+		- governs financial institutions and defines protections over financial institutions
+	- COPPA
+		- governs information systems that cater to children under the age of 13
+		- Parental consent
+	- Electronic Communication Privacy (ECPA)
+		- illegal to monitor mobile telephone conversations
+	- Communications Assistance for Law Enforcement (CALEA)
+		- allows for law enforcement to implement wiretaps
+	- Clarifying Lawful Overseas Use of Data (CLOUD)
+		- Law enforcement access to data held overseas
+	- PIPEDA
+		- Canadian privacy law
+	- PIPL
+		- Chinese Privacy Law

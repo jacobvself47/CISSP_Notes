@@ -1,0 +1,125 @@
+## Topics Covered
+- 4.1 - Apply secure design principles in network architectures
+	- 4.1.1 - OSI model and TCP/IP models
+	- 4.1.2 - IPv4 and IPv6
+	- 4.1.3 - Secure Protocols
+	- 4.1.4 - Implications of multilayer protocols
+	- 4.1.5 - Converged protocols
+	- 4.1.6 - Transport architecture
+	- 4.1.7 - Performance metrics
+	- 4.1.8 - Traffic Flows
+	- 4.1.9 - physical segementation
+	- 4.1.10 - Logical segmentation 
+	- 4.1.11 - Micro-segmentation
+	- 4.1.12 - Edge networks
+	- 4.1.13 - Wireless networks
+	- 4.1.14 - Cellular/Mobile Networks
+	- 4.1.15 - Content Distribution Networks
+	- 4.1.16 - Software defined networks
+	- 4.1.17 - Virtual Private Cloud
+	- 4.1.18 - Monitoring and management
+- 4.2 - Secure Network components
+	- 4.2.1 - Operation of infrastructure
+	- 4.2.2 - Transmission media
+	- 4.2.3 - Network Access Control
+	- 4.2.4 - Endpoint Security
+- 4.3 - Implement secure communication channels according to design
+	- 4.3.1 - Voice, video, and collaboration
+	- 4.3.2 - Remote Access
+	- 4.3.3 - Data communications
+	- 4.3.4 - Third-party connectivity
+
+## Book Chapters
+- Chapter 11 - 4.1 and 4.2
+- Chapter 12 - 4.1 and 4.3
+## Areas for Review
+- Chapter 11: 
+	- TCP/IP and UDP
+	- IPv4 and IPv6
+		- Dual stack
+		- Tunneling
+		- NAT-PT
+	- TLS
+	- multilayer protocols
+	- internal segmentation firewalls
+	- 4G and 5G
+	- ARP poisoning
+	- MAC spoofing
+	- MAC Flooding
+	- Network devices
+	- faraday cage
+	- NAC
+	- types of firewalls
+- Chapter 12:
+	- PPP Protocol
+	- PBX systems
+		- Phreaker
+	- RFC 1918
+	- setting up a VPN
+	- VLANs
+	- virtual circuits
+## Notes from Questions
+- In order to extend networks beyond 150 meters use
+	- repeater, switch or concentrator to boost the signal
+	- Use fiber cable
+- VLANs are implemented via switch
+	- VLANs work at layer 2 - so do switches
+- IPSec provides the following security concepts
+	- Encryption, message authentication, nonrepudiation, and access control
+- The common issue with satellite Internet is latency
+- Proxies act as intermediaries between devices and external servers to manage or filter requests
+	- operate at layer 7
+- SDN -> Software Defined Networks
+	- Application Layer - Application Plane -> business applications
+		- API requests are sent between the application and control layers to request resources
+	- Control Layer -> Control Plane -> Network Services
+		- handles instructions and communicates them to the network
+	- Infrastructure Layer -> Data Plane
+		- This is where the physical devices sit
+- Port Security - switch port security can prohibit communications with unknown, unauthorized, or rogue devices
+	- CAM Table flooding - overwhelms the switch, causing it to broadcast traffic to all ports and potentially exposing data to attackers
+		- prevent by restricting the number of MAC addresses that can be used on a single port
+		- CAM Tables map MAC addresses to Ports
+	- MAC Cloning - attempts to clone a MAC address and connect to another switch port
+		- implement port security to prevent cloned MAC addresses from connecting to other ports
+		- CAM tables map MAC addresses to ports
+- iSCSI - converged protocol that enables storage mounts over TCP
+	- low cost alternative to Fibre Channel
+- WPA2's encryption scheme is based on AES 
+- Virtual Network - ideal for combining existing networks while maintaining transparent to users
+- Site survey - detailed assessment of the wireless environment to identify coverage areas, potential access points, and security vulnerabilities
+- VXLAN - encapsulation protocol that enables VLANs to traverse routable networks
+	- allows two separate locations to function as if they were on the same network segment
+- RFC 1918 - private addresses
+	- 10.0.0.0/8, 192/168.16, 172.16/12
+- APIPA address - self-assigned address that is used when a DHCP server is unavailable
+- MAC addresses operate at the data link layer to identify systems on a network
+- MPLS - multiprotocol label switching
+	- utilized for enhancing network performance
+- FCoE - Fibre Channel over Ethernet
+	- enables Fibre Channel communications to occur over Ethernet networks, leveraging existing high-speed networks to transmit storage traffic
+	- converged protocol
+- Network modes:
+	- Ad hoc mode - allows for a direct connection between two clients - 802.11ac
+	- Standalone mode - connects clients through a wireless access point but does not link them to a central network
+	- infrastructure mode - connects endpoints to a central network rather than directly to each other
+	- wired extension mode - uses a wireless access point to connect wireless clients to a wired network
+- Email security solutions
+	- s/mime - supports both signed messages and a secure envelope message mode
+	- dkim - domain keys identified mail
+		- domain validation tool
+- 5g benefits
+	- improved subscriber identity protection
+	- mutual authentication capabilities
+- 802.1x is used for port-based authentication
+	- utilizes EAP (extensible Authentication Protocol) for authentication
+	- https://www.securew2.com/solutions/802-1x#documentation-link-1
+- 802.11a - wireless networking
+	- 802.11ac offers high-speeds
+- 802.3 - ethernet
+- 802.15 - Bluetooth
+- PEAP - wraps EAP within a TLS a TLS tunnel
+- EAP-TLS - secure but requires client certificates that complicate deployment and management
+- WPA2 - most widely used
+- WPA3 - most secure, but not widely adopted
+- RADIUS - widely used for vpn authentication services 

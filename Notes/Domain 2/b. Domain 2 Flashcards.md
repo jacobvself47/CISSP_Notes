@@ -1,0 +1,52 @@
+- Data Handling
+	- Shipping, chain of custody
+- Data Destructions
+	- erasing
+		- delete operation against a file or media - typically recoverable
+	- clearing
+		- preparing media for reuse and ensuring data cannot be recovered using traditional recovery tools
+	- purging
+		- more intense form of clearing - used in less secure environments
+	- degaussing 
+		- creates a strong magnetic field that erases data on some media
+	- destruction
+		- the final stage in the lifecycle of media - incinerate, shred
+- data classification
+	- Government
+		- Top Secret
+		- Secret
+		- Confidential
+		- Unclassified
+	- Non-Government
+		- Confidential/propietary
+		- private
+		- sensitive
+		- public
+- Data Roles
+	- Data Owner
+		- member of senior management that decides on security controls, but delegates day-to-day duties
+	- Data Custodian
+		- member of the IT department implements controls decided upon by the owner
+	- Data Admin
+		- responsible for granting appropriate access to personnel
+	- data user
+		- person who accesses data to complete work tasks
+	- data processor
+		- GDPR specific - process data on behalf of the data controller
+	- data controller
+		- GDPR specific - controls the process of the data
+- Data Protection Methods
+	- Data masking
+		- hide real data by altering it into a fictional but realistic equivalent
+	- tokenization
+		- random string of characters used to replace the data
+	- hashing
+		- converting data into a fixed-length string using a mathematical function
+	- anonymization
+		- GDPR - removing all relevant data so it is impossible to identify the original subject
+	- pseudonymization
+		- process of using pseudonyms to represent other data masks the identity of the subject
+- Security Baselines
+	- minimum security controls defined for an information systems
+- CASB - Cloud Access Security Broker
+	- security policy enforcement mechanism that solves shadow IT
